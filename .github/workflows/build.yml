@@ -30,13 +30,5 @@ jobs:
         run: |
           git clone https://github.com/palfrey/maiden.git
           cd maiden
-          pwd
           git submodule update --init
           cargo run --quiet ../test.rock
-          
-      # Runs a single command using the runners shell
-      - name: Run the code
-        run: |
-          pwd
-          ls -l
-          maiden/cargo run --quiet test.rock
