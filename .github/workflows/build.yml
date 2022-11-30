@@ -38,4 +38,7 @@ jobs:
           cd rockstar/satriani
           yarn install
           yarn pegjs
-          node rockstar $GITHUB_WORKSPACE/src/day00.rock $GITHUB_WORKSPACE/inputs/day00.in
+          Echo "Running test"
+          node rockstar $GITHUB_WORKSPACE/test.rock
+          Echo "Running day 00"
+          node rockstar $GITHUB_WORKSPACE/src/day00.rock #$GITHUB_WORKSPACE/inputs/day00.in
