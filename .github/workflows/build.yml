@@ -35,4 +35,5 @@ jobs:
 
       - name: Run day 0 test code
         run: |
+          cd rockstar/satriani
           node rockstar $GITHUB_WORKSPACE/src/day00.rock < $GITHUB_WORKSPACE/inputs/day00.in
