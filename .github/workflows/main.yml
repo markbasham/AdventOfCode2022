@@ -1,5 +1,5 @@
 # This is a basic workflow to help you get started with Actions
-name: CI
+name: Rocky CI
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
@@ -19,7 +19,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      # Runs a set of commands using the runners shell
+
       - name: setup rockstar interpreter
         run: |
           wget https://github.com/gaborsch/rocky/raw/master/rocky.jar
@@ -27,9 +27,6 @@ jobs:
           ls
           chmod a+x rockstar
           ./rockstar test.rock
-      # Run teh day 1 code
-      - name: setup rockstar interpreter
-        run: |
-          cd maiden
-          git submodule update --init
-          cargo run --quiet ../src/day00.rock < ../inputs/day00.in
+
+      - name: Run Day 00
+        run: ./rockstar test.rock ../src/day00.rock < ../inputs/day00.in
