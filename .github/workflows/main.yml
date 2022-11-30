@@ -22,10 +22,11 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: setup rockstar interpreter
         run: |
-          git clone https://github.com/palfrey/maiden.git
-          cd maiden
-          git submodule update --init
-          cargo run --quiet ../test.rock
+          wget https://github.com/gaborsch/rocky/tree/master/rocky.jar
+          wget https://github.com/gaborsch/rocky/tree/master/rockstar
+          ls
+          chmod a+x rockstar
+          ./rockstar test.rock
       # Run teh day 1 code
       - name: setup rockstar interpreter
         run: |
