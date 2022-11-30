@@ -22,8 +22,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: setup rockstar interpreter
         run: |
-          wget https://github.com/gaborsch/rocky/tree/master/rocky.jar
-          wget https://github.com/gaborsch/rocky/tree/master/rockstar
+          wget https://github.com/gaborsch/rocky/raw/master/rocky.jar
+          wget https://github.com/gaborsch/rocky/raw/master/rockstar
           ls
           chmod a+x rockstar
           ./rockstar test.rock
