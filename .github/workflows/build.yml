@@ -32,6 +32,9 @@ jobs:
           yarn install
           yarn pegjs
           node rockstar $GITHUB_WORKSPACE/test.rock
+          
+      - name: stty test
+        run: stty --help
 
       - name: Run day 0 test code
         run: |
