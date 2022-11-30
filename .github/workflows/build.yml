@@ -35,4 +35,4 @@ jobs:
           
       # Runs a single command using the runners shell
       - name: Run the code
-        run: cargo run --quiet ../test.rock
+        run: maiden/cargo run --quiet test.rock
