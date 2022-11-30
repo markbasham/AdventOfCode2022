@@ -35,4 +35,7 @@ jobs:
           
       # Runs a single command using the runners shell
       - name: Run the code
-        run: maiden/cargo run --quiet test.rock
+        run: |
+          pwd
+          ls -l
+          maiden/cargo run --quiet test.rock
