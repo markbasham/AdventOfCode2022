@@ -28,10 +28,11 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: setup rockstar interpreter
         run: |
-          git clone https://github.com/palfrey/maiden.git
-          cd maiden
-          git submodule update --init
-          cargo run --quiet ../test.rock
+          git clone https://github.com/RockstarLang/rockstar 
+          cd rockstar/satriani
+          yarn install
+          yarn pegjs
+          node rockstar $GITHUB_WORKSPACE/test.rock
 
       # Run teh day 1 code
       - name: setup rockstar interpreter
