@@ -32,6 +32,7 @@ jobs:
           cd maiden
           pwd
           git submodule update --init
+          maiden/cargo run --quiet ../test.rock
           
       # Runs a single command using the runners shell
       - name: Run the code
