@@ -32,3 +32,10 @@ jobs:
           cd maiden
           git submodule update --init
           cargo run --quiet ../test.rock
+
+      # Run teh day 1 code
+      - name: setup rockstar interpreter
+        run: |
+          cd maiden
+          git submodule update --init
+          cargo run --quiet ../src/day00.rock < ../inputs/day00.in
