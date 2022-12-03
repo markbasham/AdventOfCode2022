@@ -29,7 +29,10 @@ jobs:
           ./rockstar test.rock
 
       - name: Run Day 00
-        run: ./rockstar test.rock src/day00.rock < inputs/day00.in
+        run: ./rockstar src/day00.rock < inputs/day00.in
         
       - name: Run Day 01
-        run: ./rockstar test.rock src/day01.rock < inputs/day01.in
+        run: ./rockstar src/day01.rock < inputs/day01.in
+        
+      - name: Run Day 02
+        run: ./rockstar src/day02.rock < inputs/day02.in
