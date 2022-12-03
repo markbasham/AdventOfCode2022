@@ -1,0 +1,57 @@
+Rudolph wants stardust and carrots
+score is 6
+If carrots is "X"
+bonus is 1
+if stardust is "A"
+score is 3
+say "A-X"
+
+if stardust is "B"
+score is 0
+say "B-X"
+
+
+If carrots is "Y"
+bonus is 2
+if stardust is "B"
+score is 3
+say "B-Y"
+
+if stardust is "C"
+score is 0
+say "C-Y"
+
+	
+If carrots is "Z"
+bonus is 3
+if stardust is "C"
+score is 3
+say "C-Z"
+
+if stardust is "A"
+score is 0
+say "A-Z"
+
+
+Put score plus bonus into result
+Give result back
+
+the reindeer are cold
+the sleigh is ready
+the team is prepared
+the presents are earthbound
+listen to the reindeer
+while the reindeer aren't gone
+shout the reindeer
+Let Dasher be the reindeer at 0
+Let Prancer be the reindeer at 2
+let the team be Rudolph taking Dasher and Prancer
+whisper the team
+whisper the presents
+put the team with the presents into the sleigh
+let the presents be the sleigh
+whisper the presents
+listen to the reindeer
+
+shout "Its Christmas"
+shout the presents
